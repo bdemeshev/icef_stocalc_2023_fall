@@ -150,22 +150,22 @@ The honey-day allows you to postpone one of the three deadlines by 24 hours.
 \item 
 Is it true that for any two $\sigma$-algebras $\mathcal{F}$ and $\mathcal{H}$ and for any random variable $Y$
 \[
-  \E(\E(Y|\mathcal F)|\mathcal H) = \E(Y|\mathcal F \cap \mathcal H)?
+  \E(\E(Y \mid \mathcal F) \mid \mathcal H) = \E(Y \mid \mathcal F \cap \mathcal H)?
 \]
 Prove the statement or provide a counter-example.
 \item I throw a fair die until the first six appears. 
 Let's denote the total number of throws by $X$ and the number of odd integers thrown by $Y$.
 
 \begin{enumerate}
-  \item Find $\P(Y=y|X)$, $\E(Y|X)$, $\Var(Y|X)$;
-  \item Find $\E(X|Y)$.
+  \item Find $\P(Y=y \mid X)$, $\E(Y \mid X)$, $\Var(Y \mid X)$;
+  \item Find $\E(X \mid Y)$.
 \end{enumerate}
 
 \item I throw 100 coins. Let's denote by $X$ the number of coins that show «heads».
 I throw these $X$ coins once again, leaving other coins as they are. 
 Let's denote by $Y$ the number of coins that show «heads» now.
 
-Find $\P(Y=y|X)$, $\E(Y|X)$, $\Var(Y|X)$, $\E(Y)$, $\Var(Y)$.
+Find $\P(Y=y \mid X)$, $\E(Y \mid X)$, $\Var(Y \mid X)$, $\E(Y)$, $\Var(Y)$.
 
 
 % \item Let $X\sim U[0;1]$, and $Y$ takes values 0 and 1 with equal probabilities. 
@@ -271,11 +271,11 @@ Hint: you may believe without penalty that Doob's theorem can be applied in this
   \item (bonus point) Find $\E(Y_t)$ and $\Var(X_t)$.
 \end{enumerate}
 
-\item Consider the process $C_t = W_t^3 + 2W_t^2 - 5 W_t^2 \cdot t\cdot W_t$.
+\item Consider the process $C_t = W_t^3 + 2W_t^2 - 5 W_t^3 \cdot t$.
 \begin{enumerate}
   \item Find $dC_t$. 
   \item Is $C_t$ a martingale?
-  \item Find the covariance $\Cov(C_t, \int W^2_u dW_u)$.
+  \item Find the covariance $\Cov\left(C_t, \int_0^t W^2_u dW_u\right)$.
 \end{enumerate}
 
 \item Solve the stochatic differential equation
